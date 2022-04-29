@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(circle farthest-corner at 100px 50px, rgb(139, 130, 0),darkred);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 70%;
+    height: 550px;
+    border:10px solid rgb(190, 180, 28);
+    box-shadow: 7px 12px 10px 14px rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider {
+    display: flex;
+    height: 550px;
+}
+.arrow {
+    width: 8px;
+    height: 8px;
+    border-top: 3px solid rgb(170, 170, 170);
+    border-right: 3px solid rgb(170, 170, 170);
+    z-index: 10;
+    position: absolute;
+    cursor: pointer;
+}
+.arrow-box {
+    width: 30px;
+    height: 30px;
+    background:whitesmoke;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 2);
+    border-radius: 50%;
+    position: relative;
+}
+.arrow-left .arrow {
+    transform: rotate(-135deg);
+    top: 10px;
+    left: 12px;
+   
+}
+.arrow-right .arrow {
+    transform: rotate(45deg);
+    top: 10px;
+    left: 10px;
+
+}
+.arrow-left {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 150px;
+    transform: translateY(-50%);
+}
+.arrow-right {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    right: 150px;
+    transform: translateY(-50%);
+}
+.radio{
+    position: absolute;
+    right: 46.5%;
+    top:88% ;
+    cursor: pointer;
+ }
+ img {
+     width: 100%;
+     height: 100%;
+ }
